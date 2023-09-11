@@ -23,7 +23,7 @@ export default async (req, res) => {
       }
 
       // Generate a token
-      const token = jwt.sign({ username: user.username, id:user.id_users }, 'egeqwcyyp036ju027d7faj0919rw6mcp', { expiresIn: '1h' });
+      const token = jwt.sign({ username: user.username, id:user.id_users }, 'xxxxxx', { expiresIn: '1h' });
 
       // Make sure that req.session is defined
       req.session = req.session || {};
